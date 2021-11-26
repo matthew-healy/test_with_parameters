@@ -1,0 +1,11 @@
+[package]
+name = "test_with_parameters"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+quote = "1.0.10"
+syn = { version = "1.0.82", features = ["full"] }
+
+[lib]
+proc_macro = true
