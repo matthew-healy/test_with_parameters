@@ -13,7 +13,7 @@ mod tests {
         [ Some("me") , "Hello, me!"    ]
     )]
     fn hello_tests(input: Option<&str>, expected: &str) {
-        assert_eq(expected, hello(input))
+        assert_eq!(expected, hello(input))
     }
 }
 ```
@@ -24,7 +24,7 @@ This desugars to:
 #[cfg(test)]
 mod tests {
     fn hello_tests(input: Option<&str>, expected: &str) {
-        assert_eq(expected, hello(input))
+        assert_eq!(expected, hello(input))
     }
 
     #[test]
